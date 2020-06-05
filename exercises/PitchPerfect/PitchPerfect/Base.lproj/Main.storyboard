@@ -15,26 +15,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-Ao-ZEb">
-                                <rect key="frame" x="158" y="420" width="99" height="56"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Record">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-Ao-ZEb">
+                                <rect key="frame" x="129.5" y="280" width="155" height="155"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="Lhp-Pj-HJH"/>
+                                </constraints>
+                                <state key="normal" image="RecordButton">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXL-Ks-bzq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3p-4R-IGZ">
-                                <rect key="frame" x="80" y="484" width="255" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3p-4R-IGZ">
+                                <rect key="frame" x="154" y="443" width="106.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-p1-QYg">
-                                <rect key="frame" x="154" y="525" width="106" height="46"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Stop Recording">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-p1-QYg">
+                                <rect key="frame" x="175" y="471.5" width="64" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3ch-do-YZp"/>
+                                    <constraint firstAttribute="height" constant="64" id="R75-cl-HoT"/>
+                                </constraints>
+                                <state key="normal" image="Stop">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -44,12 +51,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WfV-Ao-ZEb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2KK-LS-r9r"/>
-                            <constraint firstItem="0FD-p1-QYg" firstAttribute="top" secondItem="C3p-4R-IGZ" secondAttribute="bottom" constant="8" id="BRn-fa-Fai"/>
-                            <constraint firstItem="C3p-4R-IGZ" firstAttribute="top" secondItem="WfV-Ao-ZEb" secondAttribute="bottom" constant="8" id="Pql-cr-jRa"/>
-                            <constraint firstItem="0FD-p1-QYg" firstAttribute="centerX" secondItem="C3p-4R-IGZ" secondAttribute="centerX" id="ntN-lN-O8Y"/>
-                            <constraint firstItem="C3p-4R-IGZ" firstAttribute="centerX" secondItem="WfV-Ao-ZEb" secondAttribute="centerX" id="tuQ-ez-xEr"/>
-                            <constraint firstItem="WfV-Ao-ZEb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zzc-Tv-CKw"/>
+                            <constraint firstItem="C3p-4R-IGZ" firstAttribute="top" secondItem="WfV-Ao-ZEb" secondAttribute="bottom" constant="8" id="01L-bk-nTh"/>
+                            <constraint firstItem="C3p-4R-IGZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="E11-YA-FLu"/>
+                            <constraint firstItem="C3p-4R-IGZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RyG-ZV-hb1"/>
+                            <constraint firstItem="WfV-Ao-ZEb" firstAttribute="centerX" secondItem="C3p-4R-IGZ" secondAttribute="centerX" id="VdS-z0-MFS"/>
+                            <constraint firstItem="0FD-p1-QYg" firstAttribute="top" secondItem="C3p-4R-IGZ" secondAttribute="bottom" constant="8" id="j42-ZS-Oos"/>
+                            <constraint firstItem="0FD-p1-QYg" firstAttribute="centerX" secondItem="C3p-4R-IGZ" secondAttribute="centerX" id="sJb-11-yOh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,4 +71,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RecordButton" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
+    </resources>
 </document>

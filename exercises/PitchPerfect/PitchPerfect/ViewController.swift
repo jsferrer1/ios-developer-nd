@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordBtn: UIButton!
+    @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var stopRecordingBtn: UIButton!
     
     override func viewDidLoad() {
